@@ -4,7 +4,7 @@
 #wczytywanie danych od użytkowanika
 year_of_business = int(input("Podaj rok prowadzenia działalności: "))
 lump_sum = int(input("Podaj obecną stawkę ryczałtu: "))
-limit_lump = int(input("Podaj limit do którego rozlicza się wg. ryczałtu: "))
+limit_lump = int(input("Podaj limit do którego podmiot rozlicza się wg. ryczałtu: "))
 percent_payment = float(input("Podaj procent opłaty nieryczałtowanej (w ułamku dziesiętnym, z przedzieleniem kropką): "))
 year_before_score = int(input("Podaj sprzedaż w zeszłym roku: "))
 
