@@ -3,16 +3,21 @@ warun = False
 while warun == False:
     a = int(input("Podaj liczbe osób do wczytania: "))
     if a<=0:
-        print("Liczba musi być mniejsza od zera")
+        print("Liczba musi być większa od zera")
     else:
         warun = True
 
 
 #Wczytywanie imion i nazwisk
 tablica = [[0] * 2 for i in range(a)]
-y=0
-for i in range(a):
+i=0
+while i < a:
     tablica[i]=input("Podaj imię oraz nazwisko przedzielone spacją: ").split()
+    i += 1
+    if len(tablica[i-1]) == 1:
+        print("Nie przedzielono spacją! Powtórz czynność")
+        i -= 1
+        
     
 #Wczytanie danych do wyszukiwania
 keyword = (input("Podaj szukane nazwisko, by otrzymać imiona osób o tym nazwisku: "))
